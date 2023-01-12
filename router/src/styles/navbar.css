@@ -1,6 +1,6 @@
 nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 nav ul li {
@@ -9,8 +9,9 @@ nav ul li {
 
 a {
   text-decoration: none;
+  
 }
 
 nav {
-  border: 1px solid navy;
+  border: 1px solid #f8b7cd;
 }

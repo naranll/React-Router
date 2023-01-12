@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f6d2e0;
+    align-items: center;
+}
+
+.text1 {
+    width: 50%;
+    word-wrap: break-word;
+}

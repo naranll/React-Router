@@ -1,5 +1,5 @@
 export const MENUS = [
-    { name: "HOME", url: "/home" },
+    { name: "HOME", url: "/" },
     { name: "ABOUT", url: "./about" },
     { name: "LOGIN", url: "./login" },
 ]
@@ -9,5 +9,14 @@ export const users = [
     {
         username: "q",
         password: "12",
-    }
+    },
+    {
+        username: "w",
+        password: "12",
+    },
+    {
+        username: "r",
+        password: "12",
+    },
+
 ]

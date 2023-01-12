@@ -1,10 +1,26 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import { useState } from "react";
 
-export default function Login() {
+export default function Login(prop) {
+    const { loginState } = prop;
+    const [username, setUsername] = useState(" ");
+    const [password, setPassword] = useState(" ");
+
+    function loginHandler(event) {
+        event.preventDefault();
+        setUsername(event.target.userName.value);
+        setPassword(event.target.password.value);
+        loginState(username, password);
+        console.log(username);
+    }
+
+
     return <div>
         Login
-        <Header />
-        <Footer />
+        <form onSubmit={loginHandler}>
+            <input type="text" name="userName"></input>
+            <input type="text" name="password"></input>
+            <button type="submit">Log In</button>
+            <input type="button" value="Register" />
+        </form>
     </div>
 }

@@ -14,7 +14,6 @@ export default function Login(prop) {
         console.log(username);
     }
 
-
     return <div className="login">
         <div className="loginPage">
             <form onSubmit={loginHandler} className="loginForm">

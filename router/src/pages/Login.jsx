@@ -6,14 +6,22 @@ export default function Login(prop) {
     const [username, setUsername] = useState(" ");
     const [password, setPassword] = useState(" ");
 
-    function loginHandler(event) {
+    // function loginHandler(event) {
+    //     event.preventDefault();
+    //     setUsername(event.target.userName.value);
+    //     setPassword(event.target.password.value);
+    //     loginState(username, password);
+    //     console.log(username);
+    // }
+
+
+    function loginHandler(event){
         event.preventDefault();
+        loginState(event.target.userName.value, event.target.password.value);
         setUsername(event.target.userName.value);
         setPassword(event.target.password.value);
-        loginState(username, password);
-        console.log(username);
+        console.log("username in login handler: ", username);
     }
-
 
     return <div className="login">
         <div className="loginPage">
